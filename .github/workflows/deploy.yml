@@ -6,12 +6,17 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./marcrej-portfolio
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build static site
         run: npm run build
@@ -22,6 +27,6 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
-          source: "out/"
+          source: "marcrej-portfolio/out/"
           target: "/home/marcelo/www/portfolio"
-          strip_components: 1
+          strip_components: 2
