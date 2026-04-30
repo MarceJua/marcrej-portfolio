@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // genera archivos estáticos
+  output: "export",
   images: {
-    unoptimized: true, // Necesario para el modo export
+    unoptimized: true,
   },
 };
 
