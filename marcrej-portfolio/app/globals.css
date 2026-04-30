@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root {
+  --bg-cream: #F2F2E2;
+  --text-dark: #344E41;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  overflow-x: hidden; 
+}
