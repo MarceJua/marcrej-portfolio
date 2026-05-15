@@ -150,6 +150,7 @@ export default function Portfolio() {
                 title="SaludPlus" 
                 tech="JavaScript, Full-stack" 
                 repoUrl="https://github.com/MarceJua/AYD1-Fase1S2026_SeccionB_G2" 
+                demoUrl="https://saludplus360.tech"
                 bgClass="bg-[#344E41]" 
                 textClass="text-[#F2F2E2]" 
               />
@@ -266,27 +267,41 @@ function TimelineItem({ title, entity, date, icon }: any) {
   );
 }
 
-function ProjectCard({ title, tech, repoUrl, bgClass, textClass }: any) {
-  const [isHovered, setIsHovered] = useState(false);
-  
+function ProjectCard({ title, tech, repoUrl, demoUrl, bgClass, textClass }: any) {
   return (
-    <div 
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className={`${bgClass} rounded-[2rem] aspect-[4/3] flex flex-col items-center justify-center relative overflow-hidden p-6 transition-all duration-300 shadow-sm hover:shadow-xl`}
-    >
-      <h3 className={`${textClass} text-2xl font-black tracking-tight z-10 text-center mb-1`}>{title}</h3>
-      <p className={`${textClass} text-xs opacity-80 z-10`}>{tech}</p>
+    <div className={`${bgClass} rounded-[2rem] aspect-[4/3] flex flex-col items-center justify-center p-6 transition-transform duration-300 hover:-translate-y-2 shadow-sm hover:shadow-xl`}>
       
-      <div className={`absolute inset-0 bg-[#1e1e1e]/90 flex items-center justify-center z-20 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        <a 
-          href={repoUrl} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="border border-[#F2F2E2] text-[#F2F2E2] px-6 py-2 rounded-full font-bold text-xs hover:bg-[#F2F2E2] hover:text-[#344E41] transition-colors"
-        >
-          View Code
-        </a>
+      <div className="flex flex-col items-center mb-4 text-center">
+        <h3 className={`${textClass} text-2xl font-black tracking-tight mb-1`}>{title}</h3>
+        <p className={`${textClass} text-xs opacity-80`}>{tech}</p>
+      </div>
+      
+      {/* Botones de acción siempre visibles (Ideales para Móvil y Desktop) */}
+      <div className="flex items-center justify-center gap-3 mt-2 flex-wrap z-10">
+        
+        {/* Renderizado Condicional: SOLO sale si existe 'demoUrl' */}
+        {demoUrl && (
+          <a 
+            href={demoUrl} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-[#F2F2E2] text-[#344E41] px-5 py-2 rounded-full font-bold text-xs hover:scale-105 transition-transform shadow-md"
+          >
+            View Demo
+          </a>
+        )}
+        
+        {/* Botón de View Code: Sale en todos porque todos tienen 'repoUrl' */}
+        {repoUrl && (
+          <a 
+            href={repoUrl} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className={`border ${textClass === 'text-[#F2F2E2]' ? 'border-[#F2F2E2]' : 'border-[#344E41]'} ${textClass} px-5 py-2 rounded-full font-bold text-xs hover:opacity-70 transition-opacity`}
+          >
+            View Code
+          </a>
+        )}
       </div>
     </div>
   );
