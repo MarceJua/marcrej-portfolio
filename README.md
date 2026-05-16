@@ -1,5 +1,7 @@
 # Personal Portfolio | Marcelo Juárez
 
+<img width="1921" height="968" alt="Screenshot from 2026-05-15 18-33-08" src="https://github.com/user-attachments/assets/4396ed16-4bdc-4c27-8713-2bea08a8d4f0" />
+
 [![Next.js](https://img.shields.io/badge/Next.js-15.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![DigitalOcean](https://img.shields.io/badge/DigitalOcean-VPS-0080FF?style=for-the-badge&logo=digitalocean)](https://digitalocean.com/)
@@ -42,14 +44,18 @@ Si deseas correr este proyecto en tu máquina local:
 
 1. Clona el repositorio:
    ```
-   git clone [https://github.com/MarceJua/marcrej-portfolio.git](https://github.com/MarceJua/marcrej-portfolio.git)
+   git clone https://github.com/MarceJua/marcrej-portfolio.git
    ```
 2. Entra al directorio:
    ```
    cd marcrej-portfolio
    ```
-3. Inicia el servidor de desarrollo:
+3. Instala las dependencias:
+   ```
+   npm install
+   ```
+4. Inicia el servidor de desarrollo:
    ```
    npm run dev
    ```
-4. Abre tu navegador y visita `http://localhost:3000` para ver el portafolio.
+5. Abre tu navegador y visita `http://localhost:3000` para ver el portafolio.
