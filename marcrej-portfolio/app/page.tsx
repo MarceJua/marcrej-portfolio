@@ -107,7 +107,7 @@ export default function Portfolio() {
             
             <div className="space-y-6">
                <TimelineItem 
-                title="Systems Engineering Degree (7th Semester)" 
+                title="Systems Engineering Degree (8th Semester)" 
                 entity="Universidad de San Carlos de Guatemala (USAC)" 
                 date="Present" 
                 icon="🎓" 
@@ -142,10 +142,9 @@ export default function Portfolio() {
               <p className="text-[#344E41]/70 text-sm">Proyectos destacados de mi trayectoria académica y personal.</p>
             </div>
             
-            {/* Grid ampliado a 6 proyectos */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               
-              {/* SaludPlus */}
+              {/* 1. SaludPlus (Dark Green) - Tiene Demo */}
               <ProjectCard 
                 title="SaludPlus" 
                 tech="JavaScript, Full-stack" 
@@ -154,17 +153,27 @@ export default function Portfolio() {
                 bgClass="bg-[#344E41]" 
                 textClass="text-[#F2F2E2]" 
               />
-              
-              {/* Golampi */}
+
+              {/* 2. Habit Tracker API (Light Green) - Tiene Demo */}
               <ProjectCard 
-                title="Golampi" 
-                tech="PHP, ANTLR4" 
-                repoUrl="https://github.com/MarceJua/P1-F2-202010367" 
+                title="Habit Tracker API" 
+                tech="TypeScript, Node.js, Backend" 
+                repoUrl="https://github.com/MarceJua/API_Design" 
+                demoUrl="https://api-design-habbit.onrender.com/health"
                 bgClass="bg-[#A3B18A]" 
                 textClass="text-[#344E41]" 
               />
               
-              {/* DriveTest-API */}
+              {/* 3. Golampi (Beige) */}
+              <ProjectCard 
+                title="Golampi" 
+                tech="PHP, ANTLR4" 
+                repoUrl="https://github.com/MarceJua/P1-F2-202010367" 
+                bgClass="bg-[#DAD7CD]" 
+                textClass="text-[#344E41]" 
+              />
+              
+              {/* 4. DriveTest-API (Beige) */}
               <ProjectCard 
                 title="DriveTest-API" 
                 tech="JavaScript, Docker, Backend" 
@@ -173,37 +182,38 @@ export default function Portfolio() {
                 textClass="text-[#344E41]" 
               />
 
-              {/* Pizza Order App */}
+              {/* 5. Pizza Order App (Dark Green) */}
               <ProjectCard 
                 title="Pizza Order App" 
                 tech="JavaScript, Frontend" 
                 repoUrl="https://github.com/MarceJua/pizza-order-app" 
-                bgClass="bg-[#DAD7CD]" 
-                textClass="text-[#344E41]" 
-              />
-              
-              {/* DataCenter FIUSAC */}
-              <ProjectCard 
-                title="DataCenter FIUSAC" 
-                tech="Python" 
-                repoUrl="https://github.com/supagc/GRUPO14-Proyecto1-DataCenterFIUSAC" 
                 bgClass="bg-[#344E41]" 
                 textClass="text-[#F2F2E2]" 
               />
               
-              {/* EXT2 Simulator */}
+              {/* 6. DataCenter FIUSAC (Light Green) */}
               <ProjectCard 
-                title="EXT2 Simulator" 
-                tech="Go" 
-                repoUrl="https://github.com/MarceJua/EXT2_File_System_Simulator" 
+                title="DataCenter FIUSAC" 
+                tech="Python" 
+                repoUrl="https://github.com/supagc/GRUPO14-Proyecto1-DataCenterFIUSAC" 
                 bgClass="bg-[#A3B18A]" 
                 textClass="text-[#344E41]" 
               />
 
+              {/* 7. EXT2 Simulator (Beige - CENTRADO) */}
+              <div className="md:col-span-2 lg:col-span-1 lg:col-start-2">
+                <ProjectCard 
+                  title="EXT2 Simulator" 
+                  tech="Go" 
+                  repoUrl="https://github.com/MarceJua/EXT2_File_System_Simulator" 
+                  bgClass="bg-[#DAD7CD]" 
+                  textClass="text-[#344E41]" 
+                />
+              </div>
+
             </div>
           </div>
         </section>
-
         {/* --- BEYOND THE CODE --- */}
         <section className="py-24 w-full px-6 bg-[#344E41] text-[#F2F2E2] rounded-t-[3rem] mt-16">
           <div className="max-w-4xl mx-auto text-center">
