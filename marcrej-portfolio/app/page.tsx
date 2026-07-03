@@ -36,7 +36,7 @@ export default function Portfolio() {
               <div className="w-3 h-3 rounded-full bg-[#27c93f]"></div>
             </div>
             <p className="text-[#27c93f] mb-1">&gt; Pipeline CI/CD Status: <span className="text-[#F2F2E2]">Active</span></p>
-            <p className="text-gray-400">&gt; Server: <span className="text-[#F2F2E2]">DigitalOcean Droplet</span></p>
+            <p className="text-gray-400">&gt; Server: <span className="text-[#F2F2E2]">Vercel</span></p>
           </div>
         </motion.div>
       </section>
@@ -144,7 +144,7 @@ export default function Portfolio() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               
-              {/* 1. SaludPlus (Dark Green) - Tiene Demo */}
+              {/* 1. SaludPlus (Dark Green) */}
               <ProjectCard 
                 title="SaludPlus" 
                 tech="JavaScript, Full-stack" 
@@ -154,7 +154,7 @@ export default function Portfolio() {
                 textClass="text-[#F2F2E2]" 
               />
 
-              {/* 2. Habit Tracker API (Light Green) - Tiene Demo */}
+              {/* 2. Habit Tracker API (Light Green) */}
               <ProjectCard 
                 title="Habit Tracker API" 
                 tech="TypeScript, Node.js, Backend" 
@@ -163,8 +163,17 @@ export default function Portfolio() {
                 bgClass="bg-[#A3B18A]" 
                 textClass="text-[#344E41]" 
               />
+
+              {/* 3. Cloud Native Quiniela (Beige) */}
+              <ProjectCard 
+                title="Cloud Native Quiniela" 
+                tech="Kubernetes, Go, Rust, RabbitMQ" 
+                repoUrl="https://github.com/MarceJua/202010367_LAB_P2_SO1_VacJun2026" 
+                bgClass="bg-[#DAD7CD]" 
+                textClass="text-[#344E41]" 
+              />
               
-              {/* 3. Golampi (Beige) */}
+              {/* 4. Golampi (Beige) */}
               <ProjectCard 
                 title="Golampi" 
                 tech="PHP, ANTLR4" 
@@ -173,25 +182,25 @@ export default function Portfolio() {
                 textClass="text-[#344E41]" 
               />
               
-              {/* 4. DriveTest-API (Beige) */}
+              {/* 5. DriveTest-API (Dark Green) */}
               <ProjectCard 
                 title="DriveTest-API" 
                 tech="JavaScript, Docker, Backend" 
                 repoUrl="https://github.com/MarceJua/DriveTest-API" 
-                bgClass="bg-[#DAD7CD]" 
-                textClass="text-[#344E41]" 
+                bgClass="bg-[#344E41]" 
+                textClass="text-[#F2F2E2]" 
               />
 
-              {/* 5. Pizza Order App (Dark Green) */}
+              {/* 6. Pizza Order App (Light Green) */}
               <ProjectCard 
                 title="Pizza Order App" 
                 tech="JavaScript, Frontend" 
                 repoUrl="https://github.com/MarceJua/pizza-order-app" 
-                bgClass="bg-[#344E41]" 
-                textClass="text-[#F2F2E2]" 
+                bgClass="bg-[#A3B18A]" 
+                textClass="text-[#344E41]" 
               />
               
-              {/* 6. DataCenter FIUSAC (Light Green) */}
+              {/* 7. DataCenter FIUSAC (Light Green) */}
               <ProjectCard 
                 title="DataCenter FIUSAC" 
                 tech="Python" 
@@ -200,8 +209,7 @@ export default function Portfolio() {
                 textClass="text-[#344E41]" 
               />
 
-              {/* 7. EXT2 Simulator (Beige - CENTRADO) */}
-              <div className="md:col-span-2 lg:col-span-1 lg:col-start-2">
+              {/* 8. EXT2 Simulator (Beige) */}
                 <ProjectCard 
                   title="EXT2 Simulator" 
                   tech="Go" 
@@ -209,7 +217,6 @@ export default function Portfolio() {
                   bgClass="bg-[#DAD7CD]" 
                   textClass="text-[#344E41]" 
                 />
-              </div>
 
             </div>
           </div>
