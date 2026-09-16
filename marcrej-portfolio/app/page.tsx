@@ -27,6 +27,18 @@ export default function Portfolio() {
             On my way to becoming a Full-stack Developer. <br/>
             <span className="text-[#A3B18A] font-medium">Passionate about Cloud Computing & clean code.</span>
           </p>
+
+          <div className="flex flex-col items-center gap-2 mb-10">
+            <a
+              href="/cv/marcelo-juarez-cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-[#F2F2E2] px-6 py-3 text-sm font-bold text-[#344E41] shadow-lg transition-transform hover:scale-105"
+            >
+              View my CV <span aria-hidden="true"></span>
+            </a>
+            <span className="text-xs font-medium text-[#A3B18A]">Updated September 2026</span>
+          </div>
           
           {/* TERMINAL CI/CD */}
           <div className="bg-[#1e1e1e] border border-gray-700/50 rounded-xl p-4 text-left font-mono text-sm max-w-sm mx-auto shadow-2xl">
@@ -218,6 +230,15 @@ export default function Portfolio() {
                   textClass="text-[#344E41]" 
                 />
 
+              {/* 9. Sanitas Innova AI – Agente Corporativo RAG en Producción (Dark Green) */}
+                <ProjectCard 
+                  title="Sanitas Innova AI" 
+                  tech="Python, RAG, LangChain" 
+                  repoUrl="https://github.com/MarceJua/alura-agente-ia"
+                  bgClass="bg-[#344E41]" 
+                  textClass="text-[#F2F2E2]" 
+                />
+
             </div>
           </div>
         </section>
@@ -253,6 +274,19 @@ export default function Portfolio() {
               
             </div>
             
+            <div className="mb-12 flex flex-col items-center gap-3">
+              <p className="text-sm text-[#DAD7CD]">Want the complete overview?</p>
+              <a
+                href="/cv/marcelo-juarez-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-[#A3B18A] px-6 py-3 text-sm font-bold text-[#F2F2E2] transition-transform hover:scale-105"
+              >
+                Open CV PDF <span aria-hidden="true">↗</span>
+              </a>
+              <span className="text-xs text-[#A3B18A]">Updated September 2026</span>
+            </div>
+
             <h3 className="text-xl font-bold mb-6">Let's connect!</h3>
             <div className="flex flex-wrap justify-center gap-4">
               <SocialLink href="https://www.linkedin.com/in/marcelo-juarez-is/" label="LinkedIn ↗" />
